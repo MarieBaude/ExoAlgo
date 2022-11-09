@@ -10,10 +10,6 @@
 - remplir le réservoir avec l'eau contenu dans la verseuse
 - replacer la verseuse
 - mettre en route la cafétière
-- patienter 
-
-
-- café 
-- filtre
-- eau
-- tase
+- patienter jusqu'à ce que toute l'eau soit passer
+- prendre la verseuse
+- versez le café dans une tasse
