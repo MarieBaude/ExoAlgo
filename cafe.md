@@ -46,22 +46,6 @@ SINON
    
     - prendre la tasse pleine de café
     - aller jusqu'au client
-        SI (client absent ET pas de bureau)
-            - attendre 5 min
-                SI (retour client)
-                    - donner café
-                    FIN
-                SINON 
-                    - aller vers un évier
-                    - jeter le café dans l'évier
-                    - laver la tasse
-                    - ranger la tasse à sa place
-        SI (client absent ET un bureau)
-            - poser tasse sur le bureau
-            FIN
-
-        SINON 
-            -  donner café
-            FIN
+    - donner le café au client      
 
 FIN
