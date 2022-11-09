@@ -11,5 +11,4 @@
 - replacer la verseuse
 - mettre en route la cafétière
 - patienter jusqu'à ce que toute l'eau soit passer
-- prendre la verseuse
-- versez le café dans une tasse
+
