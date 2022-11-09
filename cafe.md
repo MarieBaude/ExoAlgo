@@ -2,27 +2,38 @@
 
 DEBUT
 - ouvrir le panier de la cafétière
+    SI (filtre usé)
+        Jeter le vieux filtre à la poubelle
+
 - prendre un filtre
-- mettre le filtre dans le panier
+    SI (pas de filtre)
+        FIN
+    SINON   
+        mettre le filtre dans le panier
 
 - prendre le café
-- mettre le café dans le filtre
+    SI (pas de café)
+        FIN
+    SINON
+        mettre le café dans le filtre
 - fermé le panier
 - ranger le café
 
 - prendre la verseuse
-- remplir la verseuse d'eau
-- remplir le réservoir avec l'eau contenu dans la verseuse
-- replacer la verseuse
+    SI (pas de verseuse)
+        FIN
+    SINON
+        remplir la verseuse d'eau
+            SI (pas d'eau)
+                FIN
+            SINON
+                remplir le réservoir avec l'eau contenu dans la verseuse
+                replacer la verseuse
 
 - appuyer sur le bouton de la cafétière
-    SI (pas d'eau)
-        Bip bip 
-
-    SI (panier ouvert)
-        Bip bip
-
-
-- patienter jusqu'à ce que toute l'eau soit passée
+    SI (pas de courant électrique)
+        FIN
+    SINON
+        patienter jusqu'à ce que toute l'eau soit passée
 
 FIN
