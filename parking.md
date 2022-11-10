@@ -12,35 +12,45 @@ FONCTION allerSortie
 DEBUT
 
     - entrer dans le parking
-   
-    SI (moyen de payment)
 
-        SI (paiment à une borne)
-            - se rendre à la borne
-                SI (ticket)
-                    - payerMachine
-                
-                SINON
-                    - prendre contact via le bouton d'interphone
-                    - communiquer votre plaque d'immatriculation
-                    - génération d'un nouveau ticket
-                    - suivre les instructions de payment
-                    - récupéré son ticket payé
-        
-            - allerSortie
-
-        
-        SINON
-            - allerSortie
+    # borne dans le parking
+    SI (paiment à une borne)
+        - se rendre à la borne
+            SI (ticket)
+                - f : payerMachine
             
-            SI (badge)
-                - présenter le badge
-
             SINON
-                - payerMachine
+                - prendre contact via le bouton d'interphone
+                - communiquer votre plaque d'immatriculation
+                - génération d'un nouveau ticket
+                - suivre les instructions de payment
+                - récupéré son ticket payé
+    
+        - f : allerSortie
 
+    
+    SINON
+        - f : allerSortie
         
-        - ouverture de la barre de sécurité
-        - sortie du parking
+        # badge
+        SI (badge)
+            - présenter le badge
+
+        # borne à la sortie
+        SINON
+            - f : payerMachine
+
+    
+    - ouverture de la barre de sécurité
+    - sortie du parking
+
+    SINON
+        - voiture bloqué
 
 FIN
+
+Problème possible :
+- panne électrique -> ouverture de la barrière manuel possible
+- client pas d'argent ->
+- barrière bloquer -> envoie de message d'erreur au gardien, ouverture de la barrière manuel possible
+- 
