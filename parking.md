@@ -13,7 +13,6 @@ DEBUT
 
     - entrer dans le parking
 
-    # borne dans le parking
     SI (paiment à une borne)
         - se rendre à la borne
             SI (ticket)
@@ -27,25 +26,18 @@ DEBUT
                 - récupéré son ticket payé
     
         - f : allerSortie
-
     
     SINON
         - f : allerSortie
         
-        # badge
         SI (badge)
             - présenter le badge
 
-        # borne à la sortie
         SINON
             - f : payerMachine
 
-    
     - ouverture de la barre de sécurité
     - sortie du parking
-
-    SINON
-        - voiture bloqué
 
 FIN
 
