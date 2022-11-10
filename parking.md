@@ -1,9 +1,3 @@
-entré parking
-paiement
-récupéré voiture
-sortie voiture
-
-
 DEBUT
 
     - entrer dans le parking
@@ -11,10 +5,16 @@ DEBUT
     SI (paiment à une borne)
         - se rendre à la borne
             SI (ticket)
-
+                - entré le ticket dans la borne
+                - suivre les instructions de payment
+                - récupéré son ticket payé 
             
             SINON
-    
+                - prendre contact via le bouton d'interphone
+                - communiquer votre plaque d'immatriculation
+                - génération d'un nouveau ticket
+                - suivre les instructions de payment
+                - récupéré son ticket payé
 
     
     SINON
@@ -23,10 +23,10 @@ DEBUT
         
         SI (badge)
             - présenter le badge
-            - ouverture de la barre de sécurité
+
         SINON
             - payer à la sortie
-            - ouverture de la barre de sécurité
 
-
+    
+    - ouverture de la barre de sécurité
 FIN
