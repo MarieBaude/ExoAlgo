@@ -1,3 +1,10 @@
+VARIABLE
+```
+
+```
+
+FONCTION
+``` 
 FONCTION payerMachine
 - entré le ticket dans la machine
 - suivre les instructions de payment
@@ -11,7 +18,8 @@ FONCTION allerSortie
 
 FONCTION ouvertureManuel
 - responsable se déplace physique jusqu'à la barre
-- ouverte de la barre manuellement
+- ouverte de la barre manuellement 
+```
 
 
 DEBUT
