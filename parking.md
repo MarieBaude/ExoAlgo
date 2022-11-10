@@ -8,6 +8,10 @@ FONCTION allerSortie
     - aller jusqu'à la voiture
     - conduire la voiture jusqu'à la porte de sortie
 
+FONCTION ouvertureManuel
+    - responsable se déplace physique jusqu'à la barre
+    - ouverte de la barre manuellement
+
 
 DEBUT
 
@@ -15,15 +19,17 @@ DEBUT
 
     SI (paiment à une borne)
         - se rendre à la borne
-            SI (ticket)
-                - f : payerMachine
-            
-            SINON
-                - prendre contact via le bouton d'interphone
-                - communiquer votre plaque d'immatriculation
-                - génération d'un nouveau ticket
-                - suivre les instructions de payment
-                - récupéré son ticket payé
+        SI (ticket)
+            - f : payerMachine
+            SI (pas d'argent)
+                - ?
+        
+        SINON
+            - prendre contact via le bouton d'interphone
+            - communiquer la plaque d'immatriculation
+            - génération d'un nouveau ticket
+            - suivre les instructions de payment
+            - récupéré son ticket payé
     
         - f : allerSortie
     
@@ -37,12 +43,13 @@ DEBUT
             - f : payerMachine
 
     - ouverture de la barre de sécurité
+    SI (barrière en panne)
+        - envoie d'un message d'erreur
+        - f : ouvertureManuel
+    
+    SI (panne de courant)
+        - f : ouvertureManuel
+
     - sortie du parking
 
 FIN
-
-Problème possible :
-- panne électrique -> ouverture de la barrière manuel possible
-- client pas d'argent ->
-- barrière bloquer -> envoie de message d'erreur au gardien, ouverture de la barrière manuel possible
-- 
