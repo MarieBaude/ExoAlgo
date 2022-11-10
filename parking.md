@@ -21,8 +21,6 @@ DEBUT
         - se rendre à la borne
         SI (ticket)
             - f : payerMachine
-            SI (pas d'argent)
-                - ?
         
         SINON
             - prendre contact via le bouton d'interphone
@@ -32,6 +30,7 @@ DEBUT
             - récupéré son ticket payé
     
         - f : allerSortie
+        - présentation ticket payé
     
     SINON
         - f : allerSortie
@@ -43,6 +42,7 @@ DEBUT
             - f : payerMachine
 
     - ouverture de la barre de sécurité
+    
     SI (barrière en panne)
         - envoie d'un message d'erreur
         - f : ouvertureManuel
