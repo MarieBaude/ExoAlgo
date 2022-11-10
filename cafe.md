@@ -1,5 +1,6 @@
 # Automate qui fait le café
 DEBUT
+
     SI (pas de cafetière complète OU de tasse OU de café OU de filtre OU d'eau OU d'électricité)
         FIN
 
