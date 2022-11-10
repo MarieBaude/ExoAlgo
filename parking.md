@@ -3,7 +3,7 @@ FONCTION
 ``` 
 FONCTION payerMachine
     - entré le ticket dans la machine
-    - suivre les instructions de payment
+    - suivre les instructions de paiment
     SI (retour ticket)
         - récupéré son ticket payé 
 
@@ -30,7 +30,7 @@ DEBUT
             - prendre contact via le bouton d'interphone
             - communiquer la plaque d'immatriculation
             - génération d'un nouveau ticket
-            - suivre les instructions de payment
+            - suivre les instructions de paiment
             - récupéré son ticket payé
     
         - f : allerSortie
