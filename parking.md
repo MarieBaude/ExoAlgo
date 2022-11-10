@@ -1,6 +1,7 @@
 FONCTION payerMachine
 - entré le ticket dans la machine
 - suivre les instructions de payment
+
 SI (retour ticket)
     - récupéré son ticket payé 
 
