@@ -1,16 +1,16 @@
 FONCTION payerMachine
-    - entré le ticket dans la machine
-    - suivre les instructions de payment
-    SI (retour ticket)
-        - récupéré son ticket payé 
+- entré le ticket dans la machine
+- suivre les instructions de payment
+SI (retour ticket)
+    - récupéré son ticket payé 
 
 FONCTION allerSortie
-    - aller jusqu'à la voiture
-    - conduire la voiture jusqu'à la porte de sortie
+- aller jusqu'à la voiture
+- conduire la voiture jusqu'à la porte de sortie
 
 FONCTION ouvertureManuel
-    - responsable se déplace physique jusqu'à la barre
-    - ouverte de la barre manuellement
+- responsable se déplace physique jusqu'à la barre
+- ouverte de la barre manuellement
 
 
 DEBUT
@@ -42,7 +42,7 @@ DEBUT
             - f : payerMachine
 
     - ouverture de la barre de sécurité
-    
+
     SI (barrière en panne)
         - envoie d'un message d'erreur
         - f : ouvertureManuel
