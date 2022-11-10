@@ -1,3 +1,13 @@
+FONCTION payerMachine
+    - entré le ticket dans la machine
+    - suivre les instructions de payment
+    SI (retour ticket)
+        - récupéré son ticket payé 
+
+FONCTION allerSortie
+    - aller jusqu'à la voiture
+    - conduire la voiture jusqu'à la porte de sortie
+
 DEBUT
 
     - entrer dans le parking
@@ -5,9 +15,7 @@ DEBUT
     SI (paiment à une borne)
         - se rendre à la borne
             SI (ticket)
-                - entré le ticket dans la borne
-                - suivre les instructions de payment
-                - récupéré son ticket payé 
+                - payerMachine
             
             SINON
                 - prendre contact via le bouton d'interphone
@@ -16,22 +24,20 @@ DEBUT
                 - suivre les instructions de payment
                 - récupéré son ticket payé
     
-        - aller jusqu'à la voiture
-        - conduire la voiture jusqu'à la porte de sortie
+        - allerSortie
 
     
     SINON
-        - aller jusqu'à la voiture
-        - conduire la voiture jusqu'à la porte de sortie
+        - allerSortie
         
         SI (badge)
             - présenter le badge
 
         SINON
-            - payer à la sortie
+            - payerMachine
 
     
     - ouverture de la barre de sécurité
     - sortie du parking
-    
+
 FIN
