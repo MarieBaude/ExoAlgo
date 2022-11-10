@@ -15,6 +15,9 @@ DEBUT
                 - génération d'un nouveau ticket
                 - suivre les instructions de payment
                 - récupéré son ticket payé
+    
+        - aller jusqu'à la voiture
+        - conduire la voiture jusqu'à la porte de sortie
 
     
     SINON
@@ -29,4 +32,6 @@ DEBUT
 
     
     - ouverture de la barre de sécurité
+    - sortie du parking
+    
 FIN
